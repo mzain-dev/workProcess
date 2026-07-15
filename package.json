@@ -1,0 +1,29 @@
+{
+  "name": "hmi-product-spotlight",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Muhhamad Zain",
+  "scripts": {
+    "start": "remotion studio",
+    "build-process-wheel": "remotion render ProcessWheel out/process-wheel.mp4",
+    "build-process-wheel-urdu": "remotion render ProcessWheelUrdu out/process-wheel-urdu.mp4",
+    "build-process-wheel-malayalam": "remotion render ProcessWheelMalayalam out/process-wheel-malayalam.mp4",
+    "build-process-wheel-arabic": "remotion render ProcessWheelArabic out/process-wheel-arabic.mp4",
+    "build-all": "npm run build-process-wheel && npm run build-process-wheel-urdu && npm run build-process-wheel-malayalam && npm run build-process-wheel-arabic"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "@remotion/gif": "^4.0.488",
+    "@remotion/google-fonts": "^4.0.488",
+    "@remotion/lottie": "^4.0.488",
+    "gsap": "^3.15.0",
+    "motion": "^12.42.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "typescript": "^5.5.0"
+  }
+}
